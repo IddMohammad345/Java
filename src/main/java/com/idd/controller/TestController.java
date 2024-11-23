@@ -10,5 +10,10 @@ public class TestController {
 	public String test() {
 		return "Jenkins Test is completed Successfully...";
 	}
+	
+	@GetMapping("/a")
+	public String Hello() {
+		return "Hello guys ,How are you";
+	}
 
 }
