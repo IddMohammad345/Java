@@ -8,12 +8,12 @@ public class TestController {
 	
 	@GetMapping("/")
 	public String test() {
-		return "Jenkins Test is completed Successfully...";
+		return "Jenkins Test is completed Successfully....";
 	}
 	
 	@GetMapping("/a")
 	public String Hello() {
-		return "Hello guys ,How are you";
+		return "Hello guys ,How are you..";
 	}
 
 }
