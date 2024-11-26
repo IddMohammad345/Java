@@ -12,6 +12,7 @@
 	<artifactId>Proj01-mavenToTestJenkins</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Proj01-mavenToTestJenkins</name>
+	<packaging>war</packaging>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
