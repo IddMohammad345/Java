@@ -13,7 +13,7 @@ public class TestController {
 	
 	@GetMapping("/a")
 	public String Hello() {
-		return "Hello guys ,How are you..";
+		return "Hello guys ,How are you...";
 	}
 
 }
