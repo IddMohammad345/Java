@@ -6,12 +6,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 	
-	@GetMapping("/")
+	@GetMapping("/test")
 	public String test() {
 		return "Jenkins Test is completed Successfully..";
 	}
 	
-	@GetMapping("/a")
+	@GetMapping("/hello")
 	public String Hello() {
 		return "Hello guys ,How are you...";
 	}
