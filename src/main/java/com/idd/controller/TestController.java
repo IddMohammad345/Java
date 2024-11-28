@@ -8,7 +8,7 @@ public class TestController {
 	
 	@GetMapping("/test")
 	public String test() {
-		return "Jenkins Test is completed Successfully..";
+		return "test";
 	}
 	
 	@GetMapping("/hello")
