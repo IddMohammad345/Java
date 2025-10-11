@@ -12,6 +12,10 @@ public class FrequencyOfElementArrayAndDuplicate {
         int[] numbers={1,2,3,3,4,5,5,5,6,6,7,9,7,6,4,3,3,2};
         List<Integer> list = Arrays.stream(numbers).boxed().collect(Collectors.toList());
 
+        Map<Integer, Long> collect = list.stream()
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+        collect.entrySet().stream().forEach(System.out::println);
+        System.out.println("=========================================================");
         //using java 8
         list.stream()
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
