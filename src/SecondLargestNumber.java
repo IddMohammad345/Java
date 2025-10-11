@@ -2,13 +2,11 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static sun.plugin.util.ProgressMonitor.get;
-
 public class SecondLargestNumber {
     public static void main(String[] args) {
         
         List<Integer>list= Arrays.asList(1,2,3,4,5,6,6,7,7,8,8,4,3,2,6,8,9,10,23);
-        //finding second largest number
+        //finding second target number
        int result =list.stream()
                .distinct()
                 .sorted((a,b)->b-a)
