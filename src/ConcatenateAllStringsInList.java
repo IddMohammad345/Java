@@ -7,13 +7,17 @@ public class ConcatenateAllStringsInList {
     public static void main(String[] args) {
         List<String> list = Arrays.asList("apple", "banana", "cherry", "coconut", "apple");
 
-        List<String> list2 = list.stream().collect(Collectors.toList());
+        //by using stream
+        String concatenated = list.stream().collect(Collectors.joining(","));
+        System.out.println("\""+concatenated+"\"");
+        System.out.println("========================================");
+        StringBuilder concatenatedString=new StringBuilder();
+        for (String s:list){
+            concatenatedString.append(s);
+        }
 
-        System.out.println(list2);
+        System.out.println("\""+concatenatedString+"\"");
 
-        System.out.println("====================================");
 
-        List<String> list1 = new ArrayList<>(list);
-        System.out.println(list1);
     }
 }
